@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Copyright" content="Inazuma" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ranyeh" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="English" />
+  <meta name="application-name" content="Inazuma" />
+  <meta name="description" content="Tailwind CSS Company Landing Page Template by Ranyeh." />
+  <meta name="keywords" content="company" />
+  <meta name="twitter:title" content="Inazuma | Tailwind CSS Company Landing Page" />
+  <meta name="twitter:description" content="Tailwind CSS Company Landing Page Template by Ranyeh." />
+  <meta name="twitter:image" content="./assets/img/inazuma-cover.png" />
+  <meta content="Inazuma | Tailwind CSS Company Landing Page" property="og:title" />
+  <meta content="Inazuma" property="og:site_name" />
+  <meta content="Tailwind CSS Company Landing Page Template by Ranyeh." property="og:description" />
+  <meta content="./assets/img/inazuma-cover.png" property="og:image" />
+  <meta content="https://ranyeh24.github.io/inazuma-tailwind" property="og:url" />
+  <meta content="website" property="og:type" />
+
+  <meta name="msapplication-TileColor" content="#3d63dd" />
+  <meta name="msapplication-TileImage" content="./assets/favicon/mstile-144x144.png" />
+  <meta name="theme-color" content="#3d63dd" />
+
+  <!-- Page title -->
+  <title>HAMKA | Landing Page</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ranyeh24.github.io/inazuma-tailwind" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="194x194" href="./assets/favicon/favicon-194x194.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest.json" />
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#3d63dd" />
+
+  <!-- CSS Plugins -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+
+</head>
+
+<body>
+  <!-- Page loading -->
+  <div
+    class="page-loading fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto"
+    role="status" aria-live="polite" aria-atomic="true" aria-label="Loading...">
+    <div class="grid-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent" role="banner"
+    aria-label="Navigation bar">
+    <div class="container">
+      <div class="ic-navbar-container relative -mx-5 flex items-center justify-between">
+        <div class="w-60 lg:w-56 max-w-full px-5">
+          <a href="#home" class="ic-navbar-logo block w-full py-5 flex items-center">
+            <img src="assets/img/team/hamka.png" alt="Logo HAMKA" class="logo" />
+            <span class="ml-4 text-xl font-bold" style="color: rgb(61, 99, 221); margin-left: 1rem;">
+              HAMKA
+            </span>
+          </a>
+        </div>
+        <div class="flex w-full items-center justify-between px-5">
+          <div>
+            <button type="button"
+              class="ic-navbar-toggler absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"
+              data-web-toggle="navbar-collapse" data-web-target="navbarMenu" aria-expanded="false"
+              aria-label="Toggle navigation menu">
+              <i class="lni lni-menu"></i>
+            </button>
+
+            <nav id="navbarMenu"
+              class="ic-navbar-collapse absolute right-4 top-[80px] w-full max-w-[250px] rounded-lg hidden bg-primary-light-1 py-5 shadow-lg dark:bg-primary-dark-1 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+              <ul class="block lg:flex" role="menu" aria-label="Navigation menu">
+                <li class="group relative">
+                  <a href="#about"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active"
+                    role="menuitem">Tentang</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#team"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Pengurus</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#services"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Departemen</a>
+                </li>
+
+
+                <li class="group relative">
+                  <a href="#portfolio"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Kegiatan</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+            <button type="button" class="inline-flex items-center text-primary-color text-[30px]/none"
+              aria-label="Switch theme" data-web-trigger="web-theme"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main relative">
+    <!-- Hero section -->
+    <section id="home" class="relative overflow-hidden text-primary-color flex items-center justify-center">
+      <div class="content container text-center">
+        <div class="mx-auto max-w-[780px] p-5 rounded-lg">
+          <h1 class="mb-6 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight"
+            style="color: white;">
+            Selamat Datang Di Website HAMKA
+          </h1>
+
+          <p class="mx-auto mb-9 max-w-[600px] text-base sm:text-lg sm:leading-normal">
+            Himpunan Mahasiswa Komputer dan Akuntansi (HAMKA) hadir sebagai wadah untuk menginspirasi, berkolaborasi,
+            dan berkembang bersama.
+          </p>
+
+          <!-- <ul class="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5">
+            <li>
+              <a href="#" id="toggleButton" onclick="toggleForm(event)"
+                class="inline-flex items-center justify-center rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]"
+                role="button">
+                DAFTAR
+              </a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section-area">
+      <div class="container">
+        <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
+          <div class="w-full">
+            <figure class="scroll-revealed max-w-[480px] mx-auto">
+              <img src="./assets/img/hamka.png" alt="About image" class="rounded-xl" />
+            </figure>
+          </div>
+
+          <div class="w-full">
+            <div class="scroll-revealed">
+              <h6 class="mb-2 block text-lg font-semibold text-primary">
+                Tentang HAMKA
+              </h6>
+              <h2 class="mb-6">
+                Himpunan Mahasiswa Komputer & Akuntansi (HAMKA)
+              </h2>
+            </div>
+
+            <div class="tabs scroll-revealed">
+              <nav class="tabs-nav flex flex-wrap gap-4 my-8" role="tablist" aria-label="About us tabs">
+                <button type="button"
+                  class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                  data-web-toggle="tabs" data-web-target="tabs-panel-profile" id="tabs-list-profile" role="tab"
+                  aria-controls="tabs-panel-profile">
+                  Profile
+                </button>
+
+                <button type="button"
+                  class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                  data-web-toggle="tabs" data-web-target="tabs-panel-vision" id="tabs-list-vision" role="tab"
+                  aria-controls="tabs-panel-vision">
+                  Visi Misi
+                </button>
+
+                <button type="button"
+                  class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                  data-web-toggle="tabs" data-web-target="tabs-panel-history" id="tabs-list-history" role="tab"
+                  aria-controls="tabs-panel-history">
+                  Sejarah
+                </button>
+              </nav>
+
+              <div class="tabs-content mt-4" id="tabs-panel-profile" tabindex="-1" role="tabpanel"
+                aria-labelledby="tabs-list-profile">
+                <p>
+                  Himpunan Mahasiswa Komputer dan Akuntansi STTIKOM Insan Unggul, atau yang biasa di sebut HAMKA adalah
+                  sebuah himpunan mahasiswa yang bergerak untuk mengembangakan minat dan bakat seluruh mahasiswa STTIKOM
+                  Insan Unggul Cilegon baik di bidang komputer maupun akuntansi, dan menggabungkan dari 4 prodi yang ada
+                  di STTIKOM Insan Unggul yaitu Teknik Informatika, Sistem Informasi, Komputerisasi dan Akuntansi, serta
+                  Manajemen Informatika.
+                </p>
+              </div>
+
+              <div class="tabs-content mt-4" id="tabs-panel-vision" tabindex="-1" role="tabpanel"
+                aria-labelledby="tabs-list-vision">
+                <h5>Visi</h5>
+                <p>
+                  Mewujudkan HAMKA yang mampu mengembangkan potensi keilmuannya. Berfikir inovatif, berintegritas serta
+                  partisipatif dalam berorganisasi dengan menjunjung tinggi nilai kekeluargaan.
+                </p>
+                <h5>Misi</h5>
+                <p>
+                  <li>Menumbuhkan jiwa mahasiswa yang lebih unggul, serta berfikir dalam bidang akademik dan non
+                    akademik.</li>
+                  <li>Mewadahi mahasiswa untuk mengembangkan potensi serta kepekaan terhadap perkembangan teknologi.
+                  </li>
+                  <li>Mempererat hubungan sesama fungsionaris HAMKA serta memperluas relasi dengan lembaga lain baik di
+                    dalam kampus maupun di luar kampus.</li>
+                </p>
+              </div>
+
+              <div class="tabs-content mt-4" id="tabs-panel-history" tabindex="-1" role="tabpanel"
+                aria-labelledby="tabs-list-history">
+                <p>
+                  HAMKA adalah Organisasi dari STTIKOM Insan Unggul yang didirikan pada tanggal 10 Oktober 2021, berawal
+                  dari Bang Oman Pramana selaku pencetus atau pendiri HAMKA yang melihat maraknya mahasiswa STTIKOM
+                  Insan Unggul yang menggunakan jasa joki untuk tugas akhir mereka. dan dengan bersama 9 orang yang akan
+                  menjadi anggota dan pengurus generasi pertama HAMKA, didirikan lah organisasi HAMKA dengan harapan
+                  agar mahasiswa yang menggunakan joki untuk tugas akhir berkurang.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team section -->
+    <section id="team" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">BPH</h6>
+          <h2 class="mb-6">Badan Pengurus Harian HAMKA</h2>
+        </div>
+
+        <div class="row">
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-4">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/BPH/KETUADANWAKIL/Hafiz.jpeg" alt="Team picture"
+                  class="h-full w-full rounded-full object-cover" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">
+                  Muhammad Hafiz Hakim
+                </h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">
+                  Ketua Umum
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-4">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/BPH/KETUADANWAKIL/Robi.jpeg" alt="Team picture"
+                  class="h-full w-full rounded-full object-cover" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">
+                  Robi Alamsyah
+                </h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">
+                  Wakil Ketua Umum
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-4">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/BPH/SEKUM/Nihla.jpeg" alt="Team picture"
+                  class="h-full w-full rounded-full object-cover" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">
+                  Siti Nihla
+                </h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">
+                  Sekretaris 1
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-4">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/BPH/SEKUM/Istifaiyah.jpeg" alt="Team picture"
+                  class="h-full w-full rounded-full object-cover" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">
+                  Istifaiyah 
+                </h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">
+                  Sekretaris 2
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-4">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/BPH/BENDUM/Agni.jpeg" alt="Team picture"
+                  class="h-full w-full rounded-full object-cover" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">
+                  Agni Ilmia
+                </h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">
+                  Bendahara
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Departemen
+          </h6>
+          <h2 class="mb-6">Departemen Dalam HAMKA</h2>
+          <p>
+            HAMKA Memiliki 4 Departemen Sebagai Berikut:
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-6">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[200px] h-[200px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <img src="assets/img/departemen/organisasi.png" alt="" class="rounded-2xl">
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Departemen Organisasi
+                </h4>
+                <p>
+                  Departemen yang berfokus pada kegiatan di dalam Organisasi
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-6">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[200px] h-[200px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <img src="assets/img/departemen/pp.png" alt="" class="rounded-2xl">
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Departemen Penelitian & Pengembangan
+                </h4>
+                <p>
+                  Departemen yaang berfokus untuk melakukan Penelitian dan Pengembangan di bidang akademik dan non
+                  akademik
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-6">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[200px] h-[200px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <img src="assets/img/departemen/eksternal.png" alt="" class="rounded-2xl">
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Departemen Eksternal
+                </h4>
+                <p>
+                  Departemen yang berfokus pada kegiatan di luar Organisasi atau kampus
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-6">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[200px] h-[200px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <img src="assets/img/departemen/kominfo.png" alt="" class="rounded-2xl">
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Departemen Kominfo
+                </h4>
+                <p>
+                  Departemen yang berfokus mengembangkan kegiatan di bidang komunikasi dan informasi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Kegiatan
+          </h6>
+          <h2 class="mb-6">Kegiatan di HAMKA</h2>
+          <p>
+            HAMKA memiliki banyak sekali kegiatan baik di dalam kampus maupun kegiatan di luar kampus
+          </p>
+        </div>
+
+        <div class="scroll-revealed portfolio-grid row">
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="branding">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/kegiatan/Workshop.jpg" alt="Graphics Design" class="w-full h-full object-cover" />
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Workshop Teknologi</a>
+                </h4>
+                <p>
+                  Workshop teknologi adalah kegiatan pelatihan yang bertujuan untuk meningkatkan pengetahuan dan keterampilan peserta di bidang teknologi melalui praktik langsung.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="research">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/kegiatan/Studi_Banding_2.JPG" alt="Web Development"
+                  class="w-full h-full object-cover" />
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Studi Banding</a>
+                </h4>
+                <p>
+                  HAMKA melakukan studi banding dengan himpunan mahasiswa di kampus lain dengan tujuan menambah relasi
+                  dan berbagi pengetahuan dan pengalaman.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="marketing">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/kegiatan/Ramadan_Hamka_2.PNG" alt="App Development"
+                  class="w-full h-full object-cover" />
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Ramadhan HAMKA</a>
+                </h4>
+                <p>
+                  Ramadhan HAMKA adalah acara tahunan anggota HAMKA dalam menyambut bulan suci ramadhan dan mempererat
+                  tali kekeluargaan dengan demisioner.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="planning">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/kegiatan/HSC_2.jpg" alt="Digital Marketing" class="w-full h-full object-cover" />
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">HAMKA Studi Club</a>
+                </h4>
+                <p>
+                  HAMKA Studi Club bertujuan untuk meningkatkan kemampuan anggota HAMKA khususnya dalam bidang akademik.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="branding">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/kegiatan/Kajian_2.jpg" alt="SEO Services" class="w-full h-full object-cover" />
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Kajian</a>
+                </h4>
+                <p>
+                  HAMKA juga mengadakan kajian dengan tema-tema yang menarik untuk menambah wawasan para anggota
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="marketing">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/kegiatan/hut.jpg" alt="Product Design" class="w-full h-full object-cover" />
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">HUT HAMKA</a>
+                </h4>
+                <p>
+                  HUT HAMKA adalah acara tahunan untuk memperingati hari berdirinya Organisasi HAMKA
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact section -->
+    <section id="contact" class="hidden section-area">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 xl:col-12">
+            <div
+              class="bg-body-light-1 dark:bg-primary-dark-2 rounded-xl py-8 sm:py-12 px-6 sm:px-10 z-10 relative shadow-card-1 hover:shadow-lg">
+              <div class="text-center max-w-[550px] mx-auto mb-12">
+                <h6 class="mb-2 block text-lg font-semibold text-primary">
+                  Ayo Daftar Sekarang!
+                </h6>
+                <h2 class="mb-3">Pendaftaran</h2>
+              </div>
+
+              <form id="form" class="flex flex-col gap-6">
+                <div class="row">
+                  <div class="col-12 md:col-12">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" name="nama"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Nama Lengkap" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="nim">NIM</label>
+                    <input type="text" name="nim"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="NIM" required />
+
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="kelas">Kelas</label>
+                    <input type="text" name="kelas"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Kelas" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="jurusan">Jurusan</label>
+                    <select name="jurusan" id="jurusan"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      required>
+                      <option value="">Pilih Jurusan</option>
+                      <option value="Teknik Informatika">Teknik Informatika</option>
+                      <option value="Sistem Informasi">Sistem Informasi</option>
+                      <option value="Komputer Akuntansi">Komputer Akuntansi</option>
+                      <option value="Manajemen Informatika">Manajemen Informatika</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="jk">Jenis Kelamin</label>
+                    <select name="jk" id="jk"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      required>
+                      <option value="">Pilih Jenis Kelamin</option>
+                      <option value="Laki-laki">Laki-laki</option>
+                      <option value="Perempuan">Perempuan</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="tempatlahir">Tempat Lahir</label>
+                    <input type="text" name="tempatlahir"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Tempat Lahir" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="tgllahir">Tanggal Lahir</label>
+                    <input type="date" name="tgllahir"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Tanggal Lahir" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="bakat">Bakat</label>
+                    <input type="text" name="bakat"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Bakat" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="minat">Minat Departemen</label>
+                    <select name="minat" id="minat"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      required>
+                      <option value="">Pilih Minat Departemen</option>
+                      <option value="Penelitian dan Pengembangan">Penelitian dan Pengembangan</option>
+                      <option value="Organisasi">Organisasi</option>
+                      <option value="Eksternal">Eksternal</option>
+                      <option value="Kominfo">Kominfo</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="alasan">Alasan Masuk Hamka</label>
+                    <input type="text" name="alasan"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Alasan" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="email">Email</label>
+                    <input type="email" name="email"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Email" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="nowa">No WhatsApp</label>
+                    <input type="text" name="nowa"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="No WhatsApp" required />
+                  </div>
+
+                  <div class="col-12 md:col-12">
+                    <label for="foto">Upload Foto</label>
+                    <input type="file" name="foto" id="foto" accept="image/*"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      required />
+                  </div>
+
+                  <div class="col-12">
+                    <div class="w-full text-center">
+                      <button type="submit"
+                        class="inline-block px-5 py-3 rounded-md text-base bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10">
+                        Kirim
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark-2 text-white">
+      <div class="container py-20 lg:py-[100px]">
+        <div class="row">
+          <div class="col-12 order-first lg:col-4">
+            <div class="w-full">
+              <a href="." class="inline-block mb-5">
+                <img src="assets/img/team/hamka.png" alt="" class="footer">
+              </a>
+
+              <p class="mb-8 text-body-dark-11">
+                Himpunan Mahasiswa Akuntansi & Komputer (HAMKA)
+              </p>
+
+              <div class="-mx-3 flex items-center">
+                <a href="https://www.facebook.com/profile.php?id=61550988898282&locale=id_ID" target="_blank"
+                  class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                  <i class="lni lni-facebook-fill"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@hamka_siu?_t=ZS-8wNWfUq2beK&_r=1" target="_blank"
+                  class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                  <i class="lni lni-tiktok"></i>
+                </a>
+
+                <a href="https://www.instagram.com/hamka_siu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank" class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                  <i class="lni lni-instagram-original"></i>
+                </a>
+
+                <a href="javascript:void(0)" class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                  <i class="lni lni-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 lg:col-4">
+            <div class="w-full">
+              <h4 class="mb-9 text-lg font-semibold text-inherit">Departemen</h4>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Departemen
+                    Organisasi</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Departemen
+                    Penelitian & Pengembangan</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Departemen
+                    Eksternal</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Departemen
+                    Kominfo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 lg:col-4">
+            <div class="w-full">
+              <h4 class="mb-9 text-lg font-semibold text-inherit">Kontak</h4>
+              <ul>
+                <li>
+                  <label for="wa">WhatsApp: </label>
+                  <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">+62
+                    877-4231-0674</a>
+                </li>
+                <li>
+                  <label for="wa">Email: </label>
+                  <a href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11 hover:text-primary">hamkasiu.10@gmail.com</a>
+                </li>
+                <li>
+                  <label for="wa">Alamat: </label>
+                  <a href="https://maps.app.goo.gl/8zSB8CtVxKbaEXkq5" target="_blank"
+                    class="mb-3 inline-block text-body-dark-11 hover:text-primary">Jl. Bojonegara No.45, Panggung Rawi,
+                    Kec. Jombang, Kota Cilegon, Banten 42412</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full border-t border-solid border-alpha-dark"></div>
+      <div class="container py-8">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2">
+            <div class="my-1">
+              <div class="flex flex-wrap justify-center gap-x-3 md:justify-start">
+                <a href="javascript:void(0)" class="text-body-dark-11 hover:text-body-dark-12">Privacy Policy</a>
+                <a href="javascript:void(0)" class="text-body-dark-11 hover:text-body-dark-12">Legal Notice</a>
+                <a href="javascript:void(0)" class="text-body-dark-11 hover:text-body-dark-12">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <div class="my-1 flex justify-center md:justify-end">
+              <p class="text-body-dark-11">
+                &#169; 2025 HAMKA Inc. All rights reserved. Distributed by <a
+                  href="https://www.instagram.com/hamka_siu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank">hamka_siu</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button"
+      class="inline-flex w-12 h-12 rounded-md items-center justify-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 fixed bottom-[117px] right-[20px] hover:-translate-y-1 opacity-100 visible z-50 is-hided"
+      data-web-trigger="scroll-top" aria-label="Scroll to top">
+      <i class="lni lni-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script>
+      const scriptURL = 'https://form-proxy-teal.vercel.app/api/forward'; // ganti ke endpoint proxy Vercel
+      const form = document.getElementById("form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch(scriptURL, {
+          method: "POST",
+          body: new URLSearchParams(formData),
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        })
+          .then(response => response.text())
+          .then(result => {
+            alert("Data berhasil dikirim!");
+            form.reset();
+          })
+          .catch(error => {
+            console.error("Gagal mengirim data:", error);
+            alert("Gagal mengirim data. Cek console.");
+          });
+      });
+    </script>
+
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+      // Scroll Reveal
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "16px",
+        duration: 1000,
+        reset: false,
+      });
+
+      sr.reveal(`.scroll-revealed`, {
+        cleanup: true,
+      });
+
+      // GLightBox
+      GLightbox({
+        selector: ".video-popup",
+        href: "https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM",
+        type: "video",
+        source: "youtube",
+        width: 900,
+        autoplayVideos: true,
+      });
+
+      const myGallery3 = GLightbox({
+        selector: ".portfolio-box",
+        type: "image",
+        width: 900,
+      });
+
+      // Testimonial
+      const testimonialSwiper = new Swiper(".testimonial-carousel", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      // Script sederhana untuk toggle visibility
+      function toggleForm(event) {
+        event.preventDefault(); // Mencegah href melakukan reload
+        const section = document.getElementById("contact");
+        const button = document.getElementById("toggleButton");
+
+        if (section.classList.contains("hidden")) {
+          section.classList.remove("hidden");
+          section.scrollIntoView({ behavior: "smooth" });
+          button.innerText = "Tutup Form";
+        } else {
+          section.classList.add("hidden");
+          button.innerText = "Daftar";
+        }
+      }
+    </script>
+    <script>
+      // JavaScript untuk mengganti gambar secara otomatis
+      document.addEventListener("DOMContentLoaded", function () {
+        // Path relatif ke gambar di folder assets
+        const images = [
+          "./assets/img/kegiatan/workshop-utama.jpg",
+          "./assets/img/kegiatan/Ramadan_Hamka_2.png",
+          "./assets/img/kegiatan/hut.jpg"
+        ];
+
+        let currentImageIndex = 0;
+        const section = document.getElementById("home");
+
+        // Fungsi untuk mengganti gambar
+        function changeBackground() {
+          section.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        // Jalankan pertama kali
+        changeBackground();
+
+        // Ganti gambar setiap 5 detik (5000 ms)
+        setInterval(changeBackground, 5000);
+      });
+    </script>
+</body>
+
+</html>
